@@ -8,6 +8,7 @@ const PlanCard = (props) => {
     setActive(!isActive);
   };
   return (
+      //I wasn't able to fix this in time. This should be a radio buttons, but I just noticed it is not...
     <div>
       <li
         className={isActive ? "planContainerActive" : "planContainer"}
