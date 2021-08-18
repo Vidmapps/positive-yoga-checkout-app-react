@@ -1,4 +1,7 @@
 import React from "react";
+//This was the first time for me using React, so sorry for a mess. 
+//I have tried many different approaches just to learn the best ways to apply changes.
+//I hope you would like the code (more or less), it was fun to React!
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
@@ -11,7 +14,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

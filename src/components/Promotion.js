@@ -1,6 +1,6 @@
 import AppScreen1 from "../assets/AppScreen1.svg";
 //Was using .svg in this project since it is more flexible to use, but it seems for rendering .png works way better - lesson learned.
-import AppScreen2 from "../assets/AppScreen2.png"; 
+import AppScreen2 from "../assets/AppScreen2.png";
 import CheckGreen from "../assets/CheckGreen.svg";
 import Accent from "../assets/Accent.svg";
 
@@ -74,10 +74,18 @@ const Promotion = () => {
           </ul>
         </div>
         <div className="col-md pt-2 orderFirst ">
-          <img className="position-absolute leaveBack" src={Accent} alt="Accent"></img>
+          <img
+            className="position-absolute leaveBack"
+            src={Accent}
+            alt="Accent"
+          ></img>
           <h4>Start your yoga journey now!</h4>
           <img src={AppScreen1} alt="AppScreen1" className="leaveFront"></img>
-          <img className="pt-5 leaveFront" src={AppScreen2} alt="AppScreen2"></img>
+          <img
+            className="pt-5 leaveFront"
+            src={AppScreen2}
+            alt="AppScreen2"
+          ></img>
         </div>
       </div>
     </div>

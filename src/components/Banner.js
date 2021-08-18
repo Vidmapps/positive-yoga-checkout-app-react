@@ -19,7 +19,7 @@ const bannerStyling = {
   backgroundColor: "#90CAF9",
   height: "56px",
   color: "#fff",
-  fontFamily: "SF Pro Text", //download to use
+  fontFamily: "SF Pro Text"
 };
 
 const priceTagStyling = {
