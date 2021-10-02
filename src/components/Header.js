@@ -18,10 +18,11 @@ const Header = () => {
   );
 };
 
-export default Header;
-
 const headerStyling = {
   backgroundColor: "#FFFFFF",
   height: "72px",
   boxShadow: "0px 8px 24px rgba(0, 0, 0, 0.04)", //Desktop only
 };
+
+export default Header;
+
