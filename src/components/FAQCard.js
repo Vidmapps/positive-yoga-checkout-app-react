@@ -13,9 +13,9 @@ const FAQCard = (props) => {
         >
           <strong className="pb-2">{props.question}</strong>
           {isActive ? (
-            <img src={ArrowUp} alt="ArrowUp" onClick></img>
+            <img src={ArrowUp} alt="Show answer" onClick></img>
           ) : (
-            <img src={ArrowDown} alt="ArrowDown"></img>
+            <img src={ArrowDown} alt="Hide answer"></img>
           )}
         </div>
         {isActive && <div className="secondaryTextSize">{props.answer}</div>}

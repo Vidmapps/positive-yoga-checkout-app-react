@@ -50,7 +50,7 @@ const Plans = () => {
           By choosing a payment method you agree to the <a href="url">T&Cs</a>{" "}
           and <a href="url">Privacy Policy</a>
         </p>
-        <img className="pb-2" src={SafeCheckout} alt="SafeCheckout"></img>
+        <img className="pb-2" src={SafeCheckout} alt="Safe checkout"></img>
       </div>
       <div className="col-md pt-4">
         <h4 className="p-2">What's in my program?</h4>

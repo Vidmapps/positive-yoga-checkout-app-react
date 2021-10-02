@@ -80,11 +80,11 @@ const Promotion = () => {
             alt="Accent"
           ></img>
           <h4>Start your yoga journey now!</h4>
-          <img src={AppScreen1} alt="AppScreen1" className="leaveFront"></img>
+          <img src={AppScreen1} alt="App screen 1" className="leaveFront"></img>
           <img
             className="pt-5 leaveFront"
             src={AppScreen2}
-            alt="AppScreen2"
+            alt="App screen 2"
           ></img>
         </div>
       </div>

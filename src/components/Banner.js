@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div>
       <div style={bannerStyling} className="d-flex justify-content-center">
-        <img style={priceTagStyling} src={PriceTag} alt="PriceTag"></img>
+        <img style={priceTagStyling} src={PriceTag} alt="Price tag"></img>
         <div className="align-self-center">
           50% discount only valid for 00:15:49
         </div>

@@ -8,7 +8,7 @@ const PlanCard = (props) => {
     setActive(!isActive);
   };
   return (
-      //I wasn't able to fix this in time. This should be a radio buttons, but I just noticed it is not...
+    //I wasn't able to fix this in time. This should be a radio buttons, but I just noticed it is not...
     <div>
       <li
         className={isActive ? "planContainerActive" : "planContainer"}
@@ -31,7 +31,7 @@ const PlanCard = (props) => {
           {isActive ? (
             <img className="pb-2" src={Check} alt="Check"></img>
           ) : (
-            <img className="pb-2" src={Off} alt="Off"></img>
+            <img className="pb-2" src={Off} alt="Uncheck"></img>
           )}
         </div>
         <div className="d-flex whiteSpacePreWrap">
