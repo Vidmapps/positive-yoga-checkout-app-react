@@ -1,7 +1,7 @@
-import SafeCheckout from "../assets/SafeCheckout.svg";
-import Button from "./Button";
+import SafeCheckout from "../../assets/SafeCheckout.svg";
+import Button from "../Button";
 import PlanCard from "./PlanCard";
-import ProgramContentCard from "./ProgramContentCard";
+import ProgramContentCard from "../ProgramContentCard";
 
 const Plans = () => {
   return (

@@ -1,10 +1,10 @@
 import Header from "./components/Header";
 import Banner from "./components/Banner";
-import Plans from "./components/Plans";
-import SuccessStories from "./components/SuccessStories";
+import Plans from "./components/Plans/Plans";
+import SuccessStories from "./components/SuccessStories/SuccessStories";
 import Button from "./components/Button";
 import Promotion from "./components/Promotion";
-import FAQ from "./components/FAQ";
+import FAQ from "./components/FAQ/FAQ";
 //I have used bootsrtap to save some time on syling, since I wasn't sure how it would go for me using React for the first time.
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.scss";

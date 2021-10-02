@@ -1,4 +1,4 @@
-import Stars from "../assets/Stars.svg";
+import Stars from "../../assets/Stars.svg";
 
 const SuccessStoryCard = (props) => {
   return (
@@ -9,7 +9,7 @@ const SuccessStoryCard = (props) => {
         <img className="pb-2 pt-2" src={Stars} alt="Stars"></img>
         <img
           className="pb-2 pt-2"
-          src={require(`../assets/${props.photo}.png`).default}
+          src={require(`../../assets/${props.photo}.png`).default}
           alt={props.photo}
         ></img>
         <div>{props.feedback}</div>

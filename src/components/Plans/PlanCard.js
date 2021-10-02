@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Check from "../assets/Check.svg";
-import Off from "../assets/Off.svg";
+import Check from "../../assets/Check.svg";
+import Off from "../../assets/Off.svg";
 
 const PlanCard = (props) => {
   const [isActive, setActive] = useState(false);
@@ -18,7 +18,7 @@ const PlanCard = (props) => {
           <strong className="p-1 font-weight-bold">{props.period}</strong>
           {props.discount.length > 0 ? (
             <img
-              src={require(`../assets/${props.discount}.svg`).default}
+              src={require(`../../assets/${props.discount}.svg`).default}
               alt={props.discount}
             ></img>
           ) : null}
