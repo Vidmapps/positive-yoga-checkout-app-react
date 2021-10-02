@@ -12,24 +12,24 @@ import "./index.scss";
 function App() {
   return (
     <div>
-      <Banner></Banner>
-      <Header></Header>
+      <Banner/>
+      <Header/>
       <div className="container">
-        <Plans></Plans>
-        <SuccessStories></SuccessStories>
+        <Plans/>
+        <SuccessStories/>
         <div className="d-flex justify-content-center">
           <Button onClick={getPlan} className="cardWidth">
             Get my plan
           </Button>
         </div>
-        <Promotion></Promotion>
-        <FAQ></FAQ>
+        <Promotion/>
+        <FAQ/>
         <div className="d-flex justify-content-center">
           <Button onClick={getPlan} className="cardWidth">
             Get my plan
           </Button>
         </div>{" "}
-        <Plans></Plans>
+        <Plans/>
       </div>
     </div>
   );
