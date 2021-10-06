@@ -4,16 +4,30 @@ import PlanCard from "./PlanCard";
 import ProgramContentCard from "../ProgramContentCard";
 
 const Plans = () => {
+  let planSelected
+  function getPlan() {
+  alert(planSelected);
+  
+}
+
+function onChangeValue(event) {
+  planSelected = event.target.value
+  console.log(planSelected + " parent");
+  
+}
   return (
     <div className="row">
       <div className="col-md pt-4">
         <h4 className="p-2">
-          Choose your plan and get{" "}
-          <span class="primaryColor">7 days free trial</span>
+          Choose your plan and get
+          <span class="primaryColor"> 7 days free trial</span>
         </h4>
         <div className="plan-list">
-          <ul>
+          <form onChange={onChangeValue}>
             <PlanCard
+              name="plan"
+              id="6MonthPlan"
+              value="6MonthPlan"
               period="6 month plan"
               price="$9.99"
               priceBefore="$119.94"
@@ -22,6 +36,9 @@ const Plans = () => {
               discount="Discount"
             />
             <PlanCard
+              name="plan"
+              id="3MonthPlan"
+              value="3MonthPlan"
               period="3 month plan"
               price="$14.99"
               priceBefore="$59.97"
@@ -30,12 +47,15 @@ const Plans = () => {
               discount=""
             />
             <PlanCard
+              name="plan"
+              id="1MonthPlan"
+              value="1MonthPlan"
               period="1 month plan"
               price="$19.99"
               billing="Billed monthly"
               discount=""
             />
-          </ul>
+          </form>
           <Button onClick={getPlan} className="w-100">
             Get your plan
           </Button>
@@ -96,8 +116,6 @@ const Plans = () => {
   );
 };
 
-function getPlan() {
-  alert("Your selection is confirmed!");
-}
+
 
 export default Plans;
