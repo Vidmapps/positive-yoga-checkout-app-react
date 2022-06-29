@@ -1,65 +1,21 @@
+import React, { useState } from "react";
 import SafeCheckout from "../../assets/SafeCheckout.svg";
-import Button from "../Button";
-import PlanCard from "./PlanCard";
-import ProgramContentCard from "../ProgramContentCard";
+import Button from "../UI/Button";
+import InPlan from "./InPlan";
+import PlansList from "./PlansList";
 
 const Plans = () => {
-  let planSelected
-  function getPlan() {
-  alert(planSelected);
-  
-}
-
-function onChangeValue(event) {
-  planSelected = event.target.value
-  console.log(planSelected + " parent");
-  
-}
+  const [isMarked, setIsMarked] = useState("6MonthPlan");
+  const markPlanHandler = (planId) => setIsMarked((prev) => (prev = planId));
   return (
     <div className="row">
       <div className="col-md pt-4">
         <h4 className="p-2">
           Choose your plan and get
-          <span class="primaryColor"> 7 days free trial</span>
+          <span className="primaryColor"> 7 days free trial</span>
         </h4>
-        <div className="plan-list">
-          <form onChange={onChangeValue}>
-            <PlanCard
-              name="plan"
-              id="6MonthPlan"
-              value="6MonthPlan"
-              period="6 month plan"
-              price="$9.99"
-              priceBefore="$119.94"
-              priceAfter="$59.94"
-              billing="billed every 6 months"
-              discount="Discount"
-            />
-            <PlanCard
-              name="plan"
-              id="3MonthPlan"
-              value="3MonthPlan"
-              period="3 month plan"
-              price="$14.99"
-              priceBefore="$59.97"
-              priceAfter="$44.97"
-              billing="billed every 3 months"
-              discount=""
-            />
-            <PlanCard
-              name="plan"
-              id="1MonthPlan"
-              value="1MonthPlan"
-              period="1 month plan"
-              price="$19.99"
-              billing="Billed monthly"
-              discount=""
-            />
-          </form>
-          <Button onClick={getPlan} className="w-100">
-            Get your plan
-          </Button>
-        </div>
+        <PlansList isMarked={isMarked} markPlan={markPlanHandler} />
+        <Button className="w-100">Get your plan</Button>
         <p className="text-center secondaryTextSize">
           Your free trial will automatically become a paid subscription on the
           8th day after you begin your trial. To cancel your subscription,
@@ -70,52 +26,18 @@ function onChangeValue(event) {
           By choosing a payment method you agree to the <a href="url">T&Cs</a>{" "}
           and <a href="url">Privacy Policy</a>
         </p>
-        <img className="pb-2" src={SafeCheckout} alt="Safe checkout"></img>
+        <img
+          className="pb-2 safeCheckout"
+          src={SafeCheckout}
+          alt="Safe checkout"
+        ></img>
       </div>
       <div className="col-md pt-4">
         <h4 className="p-2">What's in my program?</h4>
-        <ul>
-          <ProgramContentCard
-            title="A personalized yoga program"
-            content="Completely safe and focused on your key goals"
-            icon="APersonalizedYogaProgram"
-          />
-          <ProgramContentCard
-            title="Easy & enjoyable yoga workouts for your level"
-            content="Program adjusts to your level and pace"
-            icon="Exercise"
-          />
-          <ProgramContentCard
-            title="No special preparation needed"
-            content="Perfect for begginners! Requires no special preparation or equipment"
-            icon="Shoe"
-          />
-          <ProgramContentCard
-            title="Daily motivation & accountability"
-            content="Track your progress, develop a healthy routine, reach goals faster"
-            icon="Diet"
-          />
-          <ProgramContentCard
-            title="Browse from various yoga challenges"
-            content="30 d morning yoga, mindful yoga, back flexibility challenge, and more!"
-            icon="Whistle"
-          />
-          <ProgramContentCard
-            title="Easy access on any device"
-            content="Do your yoga anywhere across all types of devices"
-            icon="Smartwatch"
-          />
-          <ProgramContentCard
-            title="A complete guide to get started"
-            content="Best tips, guidelines, advice, and recommendations for successful practice"
-            icon="Bookcheck"
-          />
-        </ul>
+        <InPlan />
       </div>
     </div>
   );
 };
-
-
 
 export default Plans;

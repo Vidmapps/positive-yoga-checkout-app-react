@@ -1,9 +1,11 @@
+import React, { Fragment } from "react";
+
 import Logo from "../assets/Logo.svg";
 
 const Header = () => {
   return (
-    <div>
-      <div style={headerStyling} className="d-flex justify-content-center">
+    <Fragment>
+      <div className="headerStyling d-flex justify-content-center">
         <img src={Logo} alt="Logo"></img>
       </div>
       <div>
@@ -14,15 +16,8 @@ const Header = () => {
           Get access to your yoga program now!
         </h1>
       </div>
-    </div>
+    </Fragment>
   );
 };
 
-const headerStyling = {
-  backgroundColor: "#FFFFFF",
-  height: "72px",
-  boxShadow: "0px 8px 24px rgba(0, 0, 0, 0.04)", //Desktop only
-};
-
 export default Header;
-

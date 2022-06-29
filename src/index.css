@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  border-radius: 25px;
+  padding: 10px;
+  height: 131px;
+  margin: 4px;
+  cursor: pointer;
+  border: 2px solid #e5e5e6;
+}
+ul {
+  list-style-type: none;
+  padding: 0%;
+}
+span {
+  font-weight: bold;
+}
+a:link {
+  text-decoration: none;
+}
+.primaryColor {
+  color: #ff9b4e;
+}
+.whiteSpacePreWrap {
+  white-space: pre-wrap;
+}
+.opacityLow {
+  opacity: 0.6;
+}
+.safeCheckout {
+  width: -webkit-fill-available;
+}
+.storyCardStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  position: static;
+  width: 300px;
+  height: 607px;
+  left: 0px;
+  top: 0px;
+  background: #fff;
+  box-shadow: 0px 16px 32px rgba(57, 53, 60, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.faqCardStyle {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  height: fit-content;
+  left: 0px;
+  top: 40px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+.planCardBorder {
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  padding: 16px;
+  margin: 8px;
+}
+.marked {
+  border: 3px solid #ff9b4e;
+  padding: 14px;
+}
+.secondaryTextSize {
+  font-size: small;
+}
+.pointer {
+  cursor: pointer;
+}
+.leaveBack {
+  z-index: -1;
+}
+.leaveFront {
+  z-index: 1;
+  width: 300px;
+}
+.pricingRules {
+  display: block;
+}
+.headerStyling {
+  background-color: #ffffff;
+  height: 72px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
+}
+.bannerStyling {
+  background-color: #90caf9;
+  height: 56px;
+  color: #fff;
+  font-family: "SF Pro Text";
+}
+.priceTagStyling {
+  padding: 18px 18px 18px 0;
+}
+.footer {
+  height: 50px;
+}
+@media (min-width: 999px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 750px) {
+  .pricingRules {
+    display: flex;
+  }
+  .orderFirst {
+    order: 1;
+  }
+  .orderSecond {
+    order: 2;
+  }
+  .leaveBack {
+    display: none;
+  }
+  @font-face {
+    font-family: "SF Pro Text";
+    src: url("./assets/fonts/SFProDisplay-Regular.ttf") format("truetype");
+  }
+}

@@ -1,42 +1,36 @@
+import React, { Fragment } from "react";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Plans from "./components/Plans/Plans";
 import SuccessStories from "./components/SuccessStories/SuccessStories";
-import Button from "./components/Button";
-import Promotion from "./components/Promotion";
+import Button from "./components/UI/Button";
+import PromotionsList from "./components/Promotions/PromotiosList";
 import FAQ from "./components/FAQ/FAQ";
-//I have used bootsrtap to save some time on syling, since I wasn't sure how it would go for me using React for the first time.
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.scss";
+import "./index.css";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Banner/>
-      <Header/>
+    <Fragment>
+      <Banner />
+      <Header />
       <div className="container">
-        <Plans/>
-        <SuccessStories/>
+        <Plans />
+        <SuccessStories />
         <div className="d-flex justify-content-center">
-          <Button onClick={getPlan} className="cardWidth">
-            Get my plan
-          </Button>
+          <Button className="cardWidth">Get my plan</Button>
         </div>
-        <Promotion/>
-        <FAQ/>
+        <PromotionsList />
+        <FAQ />
         <div className="d-flex justify-content-center">
-          <Button onClick={getPlan} className="cardWidth">
-            Get my plan
-          </Button>
-        </div>{" "}
-        <Plans/>
+          <Button className="cardWidth">Get my plan</Button>
+        </div>
+        <Plans />
       </div>
-    </div>
+      <Footer />
+    </Fragment>
   );
-}
-
-function getPlan() {
-  alert("Your selection is confirmed!");
-}
+};
 
 export default App;
