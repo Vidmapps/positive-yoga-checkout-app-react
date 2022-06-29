@@ -6,10 +6,6 @@
 
 My first React.js project to learn the framework.
 
-### In progress
-
-- Radio buttons for a plan selection
-
 ### Installation
 
 - npm install
