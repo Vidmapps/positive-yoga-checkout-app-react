@@ -21,7 +21,12 @@ const FAQCard = (props) => {
             <img src={ArrowDown} alt="Hide answer"></img>
           )}
         </div>
-        {isActive && <div className="secondaryTextSize">{props.answer}</div>}
+        {isActive && (
+          <div
+            className="secondaryTextSize"
+            dangerouslySetInnerHTML={{ __html: props.answer }}
+          ></div>
+        )}
       </div>
     </li>
   );

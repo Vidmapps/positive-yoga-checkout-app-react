@@ -34,14 +34,14 @@ export const SuccessStoriesInfo = [
     name: "Kylie, 40",
     city: "Los Angeles",
     feedback:
-      "I will be very straightforward - I hate sports and working out. <strong>Positive Yoga</strong> put my physical activity to the next level. I started to enjoy my morning yoga routines where I get my dose of cardio, resistance, and stretching in one place. I could barely hold a plank at the beginning. Now I’m doing various yoga poses that looked impossible at first. My body shape improved a lot and I am very motivated by both: results and the feeling of progress.",
+      "I will be very straightforward - I hate sports and working out. <b>Positive Yoga</b> put my physical activity to the next level. I started to enjoy my morning yoga routines where I get my dose of cardio, resistance, and stretching in one place. I could barely hold a plank at the beginning. Now I’m doing various yoga poses that looked impossible at first. My body shape improved a lot and I am very motivated by both: results and the feeling of progress.",
   },
   {
     photo: "Jesica",
     name: "Jesica, 51",
     city: "San Francisco, CA",
     feedback:
-      "I have many friends who practice yoga and I decided to try it myself. It is the best decision I have made in a long time. With <strong>Positive Yoga</strong> program I started to lose weight, which was demotivating me for a long time. Also, I’ve learned about yoga philosophy and poses that encourage me to practice mindfulness and pay attention to stress reduction. I am very proud of myself. Feeling better is my biggest motivation.",
+      "I have many friends who practice yoga and I decided to try it myself. It is the best decision I have made in a long time. With <b>Positive Yoga</b> program I started to lose weight, which was demotivating me for a long time. Also, I’ve learned about yoga philosophy and poses that encourage me to practice mindfulness and pay attention to stress reduction. I am very proud of myself. Feeling better is my biggest motivation.",
   },
 ];
 

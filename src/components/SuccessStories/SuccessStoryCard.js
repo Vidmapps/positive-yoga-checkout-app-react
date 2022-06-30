@@ -13,7 +13,7 @@ const SuccessStoryCard = (props) => {
         src={require(`../../assets/${props.photo}.png`).default}
         alt={props.photo}
       ></img>
-      <div>{props.feedback}</div>
+      <div dangerouslySetInnerHTML={{ __html: props.feedback }}></div>
     </div>
   );
 };
