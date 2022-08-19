@@ -7,7 +7,7 @@ import Button from "./components/UI/Button";
 import PromotionsList from "./components/Promotions/PromotiosList";
 import FAQ from "./components/FAQ/FAQ";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.css";
+import "./index.scss";
 import Footer from "./components/Footer";
 
 const App = () => {

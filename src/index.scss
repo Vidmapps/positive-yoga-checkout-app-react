@@ -100,6 +100,9 @@ a:link {
 }
 .leaveBack {
   z-index: -1;
+  @media (min-width: 750px) {
+    display: none;
+  }
 }
 .leaveFront {
   z-index: 1;
@@ -107,6 +110,9 @@ a:link {
 }
 .pricingRules {
   display: block;
+  @media (min-width: 750px) {
+    display: flex;
+  }
 }
 .headerStyling {
   background-color: #ffffff;
@@ -131,20 +137,15 @@ a:link {
   }
 }
 @media (min-width: 750px) {
-  .pricingRules {
-    display: flex;
-  }
   .orderFirst {
     order: 1;
   }
   .orderSecond {
     order: 2;
   }
-  .leaveBack {
-    display: none;
-  }
-  @font-face {
-    font-family: "SF Pro Text";
-    src: url("./assets/fonts/SFProDisplay-Regular.ttf") format("truetype");
-  }
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SFProDisplay-Regular.ttf") format("truetype");
 }

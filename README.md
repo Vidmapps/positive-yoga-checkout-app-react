@@ -13,6 +13,6 @@ My first React.js project to learn the framework.
 
 ### Built With
 
-- JavaScript
-- Bootstrap 5
 - React.js v17.0.2,
+- Bootstrap 5,
+- Node-sass": v7.0.1
